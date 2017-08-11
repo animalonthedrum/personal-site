@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<!-- VENDORS -->
+<script src="vendors/angular.min.js" charset="utf-8"></script>
+<script src="vendors/angular-route.min.js" charset="utf-8"></script>
+<script src="vendors/jquery.min.js" charset="utf-8"></script>
+<script src="vendors/bootstrap.min.js" charset="utf-8"></script>
+<script src="https://use.fontawesome.com/395b82c0b4.js"></script>
+<link rel="stylesheet" href="vendors/bootstrap.min.css">
+
+
+
+
+
+<!-- CONTROLLER -->
+<script src="scripts/controllers/profileController.js" charset="utf-8"></script>
+
+<!-- SCRIPTS -->
+<script src="scripts/home.js" charset="utf-8"></script>
+
+<!-- STYLES -->
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<link rel="stylesheet" href="styles/main.css">
+<link rel="stylesheet" href="styles/navbar.css">
+<link rel="stylesheet" href="styles/about.css">
+<link rel="stylesheet" href="styles/resume.css">
+
+<head>
+  <meta charset="utf-8">
+  <title>Personal Portfolio</title>
+</head>
+
+<body ng-app='myApp' ng-controller='profileController as pc'>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container topRow">
+      <ul>
+        <li class=headerText><a href="#!/portfolio">PORTFOLIO</a></li>
+        <li class=headerText><a href="#!/about" title="About">ABOUT</a></li>
+        <li class=headerText><a href="#!/resume">RESUME</a></li>
+        <li class=headerText><a href="#!/contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav class="navbar navbar-default navbar-fixed-bottom fter">
+    <div class="container">
+
+      <a target="_blank" class='links' href="https://www.linkedin.com/in/brett-andrew-miller/"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+      <a target="_blank" class='links' href="https://www.instagram.com/brettmiller88/"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+      <a target="_blank" class='links' href="https://github.com/animalonthedrum"><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
+      <p target="_blank" class='copyr'>©2017 Brett Miller</p>
+    </div>
+  </nav>
+  <ng-view autoscroll="true"></ng-view>
+
+</body>
+
+</html>

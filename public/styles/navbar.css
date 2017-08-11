@@ -1,0 +1,39 @@
+.fter {
+  background-color: rgb(185, 185, 185);
+  height: 100px;
+  text-align: center;
+}
+
+.links {
+  padding: 10px;
+  margin: 1%;
+}
+
+li {
+  display: inline;
+}
+
+li.headerText {
+  display: inline;
+  padding: 0 50px 0 50px;
+  font-size: 18px;
+  opacity: 0.7;
+}
+
+li.headerText:hover {
+  font-size: 20px;
+  opacity: 1;
+}
+
+.copyr {
+  color black;
+  opacity: 0.6;
+  margin-top: 2%;
+}
+
+.topRow {
+  display: inline;
+  float: right;
+  margin: 20px;
+  padding: 10px;
+}

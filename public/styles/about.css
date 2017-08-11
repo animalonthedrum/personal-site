@@ -1,0 +1,55 @@
+.me {
+  margin-top: 33%;
+  margin-bottom: 17.5%;
+}
+
+.bio {
+  margin-top: 17.5%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 10px 25px;
+}
+
+.instagram {
+  height: 32%;
+  width: 32%;
+  margin: 2px 0px 2px 0px;
+}
+
+.follow {
+  background-color: rgb(185, 185, 185);
+  margin: 6% 0 6% 0;
+  text-align: center;
+  height: 8em;
+  /*line-height: 8em;*/
+  font-size: 32px;
+  font-family: "proxima nova", sans-serif;
+  border: solid white;
+  padding: 3.5% 0;
+}
+
+.instafollow {
+  color: white;
+  border: solid white;
+  background-color: transparent;
+  padding: 15px 15px;
+}
+
+.instafollow:hover {
+  background-color: white;
+  color: rgb(111, 110, 110);
+  border: solid rgb(111, 110, 110);
+}
+
+.moreAbout {
+  background-color: rgb(185, 185, 185);
+  color: white;
+  margin: 0 0 3% 0;
+  text-align: center;
+  height: 8em;
+  /*line-height: 8em;*/
+  font-size: 32px;
+  font-family: "proxima nova", sans-serif;
+  border: solid white;
+  padding: 3.5% 0;
+}
