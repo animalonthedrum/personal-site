@@ -1,0 +1,54 @@
+textarea {
+  resize: none;
+  border-bottom: 3px solid black;
+  border-top: 1px solid rgb(193, 193, 194);
+  border-left: 1px solid rgb(193, 193, 194);
+  border-right: 1px solid rgb(193, 193, 194);
+  font-size: 18px;
+  width: 400px;
+}
+
+.contactForm {
+  margin-top: 10%;
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: transparent;
+  margin: 1em 0 2em 0;
+  font-size: 18px;
+  width: 400px;
+}
+
+label {
+  display: grid;
+  font-size: 20px;
+}
+
+.submit {
+  background-color: transparent;
+  border: 1px solid black;
+  font-size: 20px;
+  margin-top: 3%;
+}
+
+.submit:hover {
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+}
+
+.myContact {
+  margin-top: 10%;
+}
+
+.myContactInfo {
+  list-style: none;
+  display: list-item;
+  font-size: 20px;
+}
+
+.iconz {
+  display: inline-block;
+}

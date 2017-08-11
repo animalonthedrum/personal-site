@@ -7,4 +7,40 @@
 
 .resumeIcons {
   text-align: center;
+  margin-bottom: 3%;
+}
+
+.resumeText {
+  margin-bottom: 2%;
+}
+
+.contactInfo {
+  text-align: center;
+}
+
+.skills {
+  text-align: center;
+  font-size: 22px;
+}
+
+.prime {
+  list-style: decimal;
+  display: block;
+}
+
+.pdf {
+  background-color: transparent;
+  border: 1px solid black;
+  font-size: 18px;
+  margin: 3% 0 3% 0;
+}
+
+.pdf:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+
+.mail:hover {
+  opacity: 0.7;
 }
