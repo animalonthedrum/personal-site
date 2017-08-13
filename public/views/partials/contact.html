@@ -22,36 +22,40 @@
   <div class="col-md-6 contactForm">
     <form class="" action="index.html" method="post">
       <div class="field">
-        <label for="name">Name</label>
-        <input type="text" name="name" value="" required>
+        <label for="name">NAME*</label>
+        <input id='sendName' type="text" name="name" value="" required>
       </div>
       <div class="field">
-        <label for="email">E-Mail</label>
-        <input type="email" name="email" required>
+        <label for="email">E-MAIL*</label>
+        <input id='sendEmail' type="email" name="email" required>
       </div>
       <div class="field">
-        <label for="message">Message</label>
-        <textarea name="message" rows="5" cols="50" required></textarea>
+        <label for="subject">SUBJECT*</label>
+        <input id='sendSubject' type="text" name="subject" required>
       </div>
       <div class="field">
-        <button class='submit' type="submit">SEND MESSAGE</button>
+        <label for="message">MESSAGE*</label>
+        <textarea id='sendMessage' name="message" rows="5" cols="50" required></textarea>
+      </div>
+      <div class="field">
+        <button onclick='sendMail(data)' class='submit' type="submit">SEND MESSAGE</button>
       </div>
     </form>
   </div>
   <div class="col-md-6 myContact">
-    <h2>Brett Miller</h2>
+
     <ul>
-      <li class='myContactInfo'><i class="fa fa-map-marker iconz" aria-hidden="true"></i>MINNEAPOLIS MN 55413</li>
-
-      <li class='myContactInfo'> <i class="fa fa-phone-square iconz" aria-hidden="true"></i>414.238.3073</li>
-
-      <li class='myContactInfo'> <i class="fa fa-envelope iconz" aria-hidden="true"></i>MILLER.BRETT.ANDREW@GMAIL.COM</li>
-
+      <li>CONTACT INFORMATION</li>
+      <li class='myContactInfo1'>BRETT MILLER</li>
+      <li class='myContactInfo'>MINNEAPOLIS MN 55413</li>
+      <li class='myContactInfo'><a class='mail' href="mailto:miller.brett.andrew@gmail.com"> MILLER.BRETT.ANDREW@GMAIL.COM</a></li>
     </ul>
 
   </div>
 
-
+  <div>
+    <img class="myMap" src="images/myMap.png" alt="Map of Minneapolis">
+  </div>
 
 
 

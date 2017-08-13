@@ -1,10 +1,12 @@
 .me {
   margin-top: 33%;
   margin-bottom: 17.5%;
+  margin-left: 33%;
 }
 
 .bio {
   margin-top: 17.5%;
+  margin-left: 11%;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   padding: 10px 25px;
@@ -20,12 +22,12 @@
   background-color: rgb(185, 185, 185);
   margin: 6% 0 6% 0;
   text-align: center;
-  height: 8em;
+  height: 5em;
   /*line-height: 8em;*/
   font-size: 32px;
   font-family: "proxima nova", sans-serif;
   border: solid white;
-  padding: 3.5% 0;
+  padding: 2.5% 0;
 }
 
 .instafollow {
@@ -46,7 +48,7 @@
   color: white;
   margin: 0 0 3% 0;
   text-align: center;
-  height: 8em;
+  height: 5em;
   /*line-height: 8em;*/
   font-size: 32px;
   font-family: "proxima nova", sans-serif;

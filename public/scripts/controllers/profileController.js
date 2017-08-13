@@ -10,6 +10,8 @@ myApp.config(function($routeProvider) {
     templateUrl: 'views/partials/contact.html'
   }).when('/resume', {
     templateUrl: 'views/partials/resume.html'
+  }).when('/portfolio', {
+    templateUrl: 'views/partials/portfolio.html'
   });
 });
 

@@ -9,7 +9,7 @@ textarea {
 }
 
 .contactForm {
-  margin-top: 10%;
+  margin-top: 8%;
 }
 
 input {
@@ -23,7 +23,7 @@ input {
 
 label {
   display: grid;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .submit {
@@ -40,15 +40,24 @@ label {
 }
 
 .myContact {
-  margin-top: 10%;
+  margin-top: 8%;
 }
 
 .myContactInfo {
   list-style: none;
   display: list-item;
   font-size: 20px;
+  margin: 2em 0 2em 0;
 }
 
-.iconz {
-  display: inline-block;
+.myContactInfo1 {
+  list-style: none;
+  display: list-item;
+  font-size: 28px;
+  margin: 2em 0 2em 0;
+}
+
+.myMap {
+  margin: 3% 0 3% 0;
+  width: 100%;
 }
