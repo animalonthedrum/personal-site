@@ -1,15 +1,19 @@
+.about {
+  margin-top: 6%;
+}
+
 .me {
-  margin-top: 33%;
+  /*margin-top: 33%;*/
   margin-bottom: 17.5%;
   margin-left: 33%;
 }
 
 .bio {
-  margin-top: 17.5%;
+  /*margin-top: 17.5%;*/
   margin-left: 11%;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
-  padding: 10px 25px;
+  padding: 55px 25px;
 }
 
 .instagram {
@@ -54,4 +58,27 @@
   font-family: "proxima nova", sans-serif;
   border: solid white;
   padding: 3.5% 0;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
 }

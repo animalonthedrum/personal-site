@@ -21,12 +21,12 @@ li {
 li.headerText {
   display: inline;
   padding: 0 50px 0 50px;
-  font-size: 18px;
+  font-size: 14px;
   opacity: 0.7;
 }
 
 li.headerText:hover {
-  font-size: 20px;
+  text-decoration: underline;
   opacity: 1;
 }
 

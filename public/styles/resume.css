@@ -24,8 +24,10 @@
 }
 
 .prime {
-  list-style: decimal;
-  display: block;
+  display: list-item;
+  list-style: circle;
+  /*list-style: decimal;
+  display: block;*/
 }
 
 .pdf {
