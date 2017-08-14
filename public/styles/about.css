@@ -12,14 +12,15 @@
   /*margin-top: 17.5%;*/
   margin-left: 11%;
   border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  padding: 55px 25px;
+  /*border-bottom: 1px solid black;*/
+  padding: 40px 25px;
 }
 
 .instagram {
   height: 32%;
   width: 32%;
   margin: 2px 0px 2px 0px;
+  display: inline;
 }
 
 .follow {
@@ -32,6 +33,7 @@
   font-family: "proxima nova", sans-serif;
   border: solid white;
   padding: 2.5% 0;
+  letter-spacing: 0.1em;
 }
 
 .instafollow {
@@ -39,6 +41,7 @@
   border: solid white;
   background-color: transparent;
   padding: 15px 15px;
+  letter-spacing: 0.1em;
 }
 
 .instafollow:hover {
@@ -56,29 +59,18 @@
   /*line-height: 8em;*/
   font-size: 32px;
   font-family: "proxima nova", sans-serif;
+  letter-spacing: 0.1em;
   border: solid white;
   padding: 3.5% 0;
 }
 
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
+.titles {
+  background-color: transparent;
+  padding: 10px 0;
+  color: black;
+  width: 50%;
+  text-shadow: 1;
+  font-family: 'abolition', sans-serif;
+  font-size: 30px;
+  letter-spacing: 0.2em;
 }

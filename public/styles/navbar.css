@@ -42,3 +42,11 @@ li.headerText:hover {
   margin: 20px;
   padding: 10px;
 }
+
+.name {
+  font-size: 24px;
+  font-family: 'abolition', sans-serif;
+  letter-spacing: 0.2em;
+  margin-left: -50%;
+  margin-right: 50%;
+}

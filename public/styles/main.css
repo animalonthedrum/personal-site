@@ -31,3 +31,19 @@ a:link {
   text-decoration: none;
   color: inherit;
 }
+
+p {
+  font-size: 14px;
+}
+
+.bob {
+  opacity: 0.4;
+}
+
+.welcome {
+  background-color: transparent;
+  margin-top: -20%;
+  z-index: 1;
+  text-align: center;
+  border: 1px solid black;
+}

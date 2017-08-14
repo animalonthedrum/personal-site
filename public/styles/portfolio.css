@@ -1,5 +1,9 @@
 .title {
   text-align: center;
+  font-family: 'abolition', sans-serif;
+  font-size: 30px;
+  letter-spacing: 0.2em;
+  margin-top: 6%;
 }
 
 .forage {
@@ -26,4 +30,8 @@
   background-color: black;
   color: white;
   border: 1px solid white;
+}
+
+.project {
+  letter-spacing: 0.2em;
 }
