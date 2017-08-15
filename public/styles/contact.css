@@ -62,3 +62,9 @@ label {
   margin: 3% 0 3% 0;
   width: 100%;
 }
+
+.vex-theme-flat-attack {
+  text-align: center;
+  font-family: "proxima nova", sans-serif;
+  letter-spacing: 0.2em;
+}

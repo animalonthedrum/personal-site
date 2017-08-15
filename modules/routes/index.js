@@ -5,6 +5,7 @@ var bodyParser = require('body-parser');
 var nodemailer = require('nodemailer');
 
 
+
 router.use(bodyParser.urlencoded({
   extended: true
 }));
@@ -15,13 +16,13 @@ var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: 'brettsitemailer@gmail.com', //YOUR GMAIL USER HERE -> EXAMPLE@gmail.com
-    pass: 'mySite#8888' //YOUR GMAIL PASSWORD, DO NOT HOST THIS INFO ON GITHUB!
+    pass: process.env.EMAIL_PASSWORD //YOUR GMAIL PASSWORD, DO NOT HOST THIS INFO ON GITHUB!
   }
 });
 
 router.post('/', function(req, res) {
   var mailer = req.body;
-  console.log(mailer);
+  console.log("this is mailer", mailer);
 
 
 
@@ -36,12 +37,15 @@ router.post('/', function(req, res) {
 
   transporter.sendMail(mailOptions, function(error, info) {
     if (error) {
-      return console.log(error);
+      res.status(500).send(error);
+      // return console.log(error);
+    } else {
+      res.sendStatus(200);
     }
     console.log('Message %s sent: %s', info.messageId, info.response);
   });
 
-  res.sendStatus(200);
+
 });
 
 router.get('/', function(req, res) {

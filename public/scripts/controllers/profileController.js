@@ -34,39 +34,62 @@ myApp.controller('profileController', ['MailService', function(MailService) {
 
 
   var vm = this;
-
-
-  var mailObject = {
-    name: vm.name,
-    email: vm.email,
-    subject: vm.subject,
-    message: vm.message
-
-  };
+  vm.mailObject = {};
+  //
+  // var mailObject = {
+  //   name: vm.name,
+  //   email: vm.email,
+  //   subject: vm.subject,
+  //   message: vm.message
+  //
+  // };
 
 
 
 
   vm.submitForm = function(mailObject) {
-
-    MailService.sendEmail(mailObject);
-
     console.log(mailObject);
+    if (mailObject.name !== undefined && mailObject.email !== undefined && mailObject.subject !== undefined && mailObject.message !== undefined) {
+      MailService.sendEmail(mailObject).then(function() {
+        vex.defaultOptions.className = 'vex-theme-os';
+        vex.dialog.alert({
+          message: 'THANK YOU FOR CONTACTING ME',
+          className: 'vex-theme-flat-attack' // Overwrites defaultOptions
+        });
+        mailObject.name = undefined;
+        mailObject.email = undefined;
+        mailObject.subject = undefined;
+        mailObject.message = undefined;
+        console.log(mailObject);
+
+
+      });
+
+
+    } else {
+      // alert('fill em out boiii');
+      // vex.dialog.alert('Thanks for checking out vex!');
+      vex.defaultOptions.className = 'vex-theme-os';
+      vex.dialog.alert({
+        message: 'PLEASE FILL OUT ENTIRE FORM',
+        className: 'vex-theme-flat-attack' // Overwrites defaultOptions
+      });
+    }
   };
 
 
 }]);
 
 
-myApp.factory('MailService', ['$http', function($http) {
-  return {
-    sendEmail: function(info) {
-      $http.post('/', info).then(function(response) {
-        console.log("Email has been sent: ", response.data);
-
-      });
-    }
+myApp.service('MailService', ['$http', function($http) {
+  // return {
+  this.sendEmail = function(info) {
+    return $http.post('/', info).then(function(response) {
+      console.log("Email has been sent: ", response.data);
+      return response;
+    });
   };
+  // };
 }]);
 
 
@@ -86,4 +109,5 @@ myApp.factory('MailService', ['$http', function($http) {
 // vm.toggleDiv = function(index) {
 //   console.log('toggle', index);
 //   vm.photos[index].info = !vm.photos[index].info;
+// };
 // };
