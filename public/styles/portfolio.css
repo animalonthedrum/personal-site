@@ -35,3 +35,19 @@
 .project {
   letter-spacing: 0.2em;
 }
+
+.tech {
+  font-size: 28px;
+  text-align: center;
+  margin-top: 3%;
+}
+
+.techSkills {
+  /*font-family: 'abolition', sans-serif;*/
+  font-family: "proxima nova", sans-serif;
+  letter-spacing: 0.2em;
+}
+
+.gitPage {
+  text-align: center;
+}

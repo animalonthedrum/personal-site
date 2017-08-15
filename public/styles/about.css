@@ -21,6 +21,7 @@
   width: 32%;
   margin: 2px 0px 2px 0px;
   display: inline;
+  z-index: -1;
 }
 
 .follow {
@@ -73,4 +74,15 @@
   font-family: 'abolition', sans-serif;
   font-size: 30px;
   letter-spacing: 0.2em;
+}
+
+.insta {
+  display: inline;
+}
+
+.textOver {
+  width: 30%;
+  font-size: 24px;
+  background-color: red;
+  margin-top: -30%;
 }

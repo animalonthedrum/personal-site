@@ -1,7 +1,6 @@
 // requires
 var express = require('express');
 var app = express();
-var nodemailer = require("nodemailer");
 var index = require('./modules/routes/index');
 
 

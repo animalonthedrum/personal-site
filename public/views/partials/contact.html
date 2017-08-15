@@ -1,6 +1,8 @@
 <div class="container">
   <div class="col-md-6 contactForm">
-    <form class="" action="index.html" method="post">
+
+    <form>
+
       <div class="field">
         <label for="name">NAME*</label>
         <input id='sendName' type="text" name="name" value="" ng-model='pc.mailObject.name' required>
@@ -18,9 +20,11 @@
         <textarea id='sendMessage' name="message" rows="5" cols="50" ng-model='pc.mailObject.message' required></textarea>
       </div>
       <div class="field">
-        <button class='submit' type="text">SEND MESSAGE</button>
+        <button ng-click="pc.submitForm(pc.mailObject)" class='submit' type="text">SEND MESSAGE</button>
       </div>
+
     </form>
+
   </div>
   <div class="col-md-6 myContact">
 

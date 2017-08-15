@@ -41,9 +41,9 @@ p {
 }
 
 .welcome {
-  background-color: transparent;
-  margin-top: -20%;
+  margin-top: -40%;
   z-index: 1;
   text-align: center;
-  border: 1px solid black;
 }
+
+.welcomeBtn {}
