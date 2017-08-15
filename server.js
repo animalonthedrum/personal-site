@@ -10,17 +10,6 @@ app.use(express.static('public'));
 app.use('/', index);
 
 
-
-// var transporter = nodemailer.createTransport({
-//   service: 'gmail',
-//   auth: {
-//     user: 'brettsitemailer@gmail.com',
-//     pass: 'mysite8888'
-//   }
-// });
-//
-
-
 // globals
 var port = process.env.PORT || 8888;
 
