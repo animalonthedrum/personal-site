@@ -11,9 +11,10 @@
 .bio {
   /*margin-top: 17.5%;*/
   margin-left: 11%;
-  border-top: 1px solid black;
+  margin-top: -30px;
+  /*border-top: 1px solid black;*/
   /*border-bottom: 1px solid black;*/
-  padding: 40px 25px;
+  padding: 0px 25px;
 }
 
 .instagram {
@@ -80,9 +81,6 @@
   display: inline;
 }
 
-.textOver {
-  width: 30%;
-  font-size: 24px;
-  background-color: red;
-  margin-top: -30%;
+.clifton {
+  font-size: 12px;
 }

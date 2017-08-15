@@ -67,8 +67,8 @@ myApp.controller('profileController', ['MailService', function(MailService) {
 
 
     } else {
-      // alert('fill em out boiii');
-      // vex.dialog.alert('Thanks for checking out vex!');
+      // alert('fill em out');
+
       vex.defaultOptions.className = 'vex-theme-os';
       vex.dialog.alert({
         message: 'PLEASE FILL OUT ENTIRE FORM',

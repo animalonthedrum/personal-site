@@ -30,6 +30,10 @@ li.headerText:hover {
   opacity: 1;
 }
 
+li.headerText:active {
+  text-decoration: underline;
+}
+
 .copyr {
   color black;
   opacity: 0.6;
@@ -47,5 +51,8 @@ li.headerText:hover {
   font-size: 24px;
   font-family: 'abolition', sans-serif;
   letter-spacing: 0.2em;
+  width: 20%;
+  padding: 20px;
+  display: inline-block;
   /*margin-right: 50%;*/
 }
