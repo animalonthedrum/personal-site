@@ -10,8 +10,13 @@
 }
 
 .links {
-  padding: 10px;
+  padding: 5px 8px;
+  ;
   margin: 1%;
+}
+
+.links:hover {
+  opacity: 0.5;
 }
 
 li {
@@ -37,7 +42,7 @@ li.headerText:active {
 .copyr {
   color black;
   opacity: 0.6;
-  margin-top: 5px;
+  /*margin-top: -5px;*/
 }
 
 .topRow {
