@@ -17,13 +17,14 @@
   padding: 0px 25px;
 }
 
-.instagram {
+
+/*.instagram {
   height: 32%;
   width: 32%;
   margin: 2px 0px 2px 0px;
   display: inline;
   z-index: -1;
-}
+}*/
 
 .follow {
   background-color: rgb(185, 185, 185);
@@ -77,10 +78,26 @@
   letter-spacing: 0.2em;
 }
 
-.insta {
+
+/*.insta {
   display: inline;
-}
+}*/
 
 .clifton {
   font-size: 12px;
+}
+
+.imageCollage {
+  display: inline-block;
+}
+
+.collage {
+  text-align: center;
+  margin-bottom: 6%;
+}
+
+#gal {
+  height: 18em;
+  width: 18em;
+  padding: 0.5em;
 }

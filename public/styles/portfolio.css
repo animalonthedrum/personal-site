@@ -63,17 +63,3 @@
 .gitPage {
   text-align: center;
 }
-
-.imageCollage {
-  display: inline-block;
-}
-
-.collage {
-  text-align: center;
-  margin-bottom: 6%;
-}
-
-#gal {
-  height: 18em;
-  width: 18em;
-}
