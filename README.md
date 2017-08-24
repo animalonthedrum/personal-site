@@ -1,3 +1,3 @@
 #Personal Portfolio
 
-Visit brettmiller.me to view
+Visit www.brettmiller.me to view
