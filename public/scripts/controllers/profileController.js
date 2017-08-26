@@ -14,21 +14,7 @@ myApp.config(function($routeProvider) {
     templateUrl: 'views/partials/portfolio.html'
   });
 });
-//
-// var photo = function(route, info) {
-//   this.route = route;
-//   this.description = info;
-//   this.info = false;
-// };
-//
-// myApp.controller('profileController', profileController);
-//
-// function profileController() {
-//   var vm = this;
-//
-//
-//
-// }
+
 
 myApp.controller('profileController', ['MailService', function(MailService) {
 
@@ -71,7 +57,7 @@ myApp.controller('profileController', ['MailService', function(MailService) {
 
       vex.defaultOptions.className = 'vex-theme-os';
       vex.dialog.alert({
-        message: 'PLEASE FILL OUT ENTIRE FORM',
+        message: 'PLEASE FILL OUT ALL FIELDS',
         className: 'vex-theme-flat-attack' // Overwrites defaultOptions
       });
     }
