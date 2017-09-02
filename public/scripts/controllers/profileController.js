@@ -1,6 +1,6 @@
 var myApp = angular.module('myApp', ['ngRoute']);
 
-myApp.config(function($routeProvider) {
+myApp.config(function($routeProvider, $locationProvider) {
   $routeProvider.when('/', {
     templateUrl: 'views/partials/about.html',
     controller: 'profileController as pc'
@@ -13,6 +13,7 @@ myApp.config(function($routeProvider) {
   }).when('/portfolio', {
     templateUrl: 'views/partials/portfolio.html'
   });
+  $locationProvider.html5Mode(true);
 });
 
 
@@ -75,25 +76,5 @@ myApp.service('MailService', ['$http', function($http) {
       return response;
     });
   };
-  // };
+
 }]);
-
-
-
-
-//
-// var co = new photo("rocky.jpg", "Rocky Mountain National Forest");
-// var moab = new photo("moab.jpg", "Base Camp, Moab UT");
-// var bisti = new photo("bisti.jpg", "Waffles overlooking Bisti Badlands NM ");
-// var fungi = new photo("fungi.jpg", "Fungi, Muir Woods, CA");
-// var sanFran = new photo("sanfran2.jpg", "San Fran is for lovers");
-// var beard = new photo("beard.jpg", "Rocking the beard with the Premiums");
-// vm.photos = [co, moab, bisti, fungi, sanFran, beard];
-
-
-
-// vm.toggleDiv = function(index) {
-//   console.log('toggle', index);
-//   vm.photos[index].info = !vm.photos[index].info;
-// };
-// };
