@@ -13,7 +13,10 @@ myApp.config(function($routeProvider, $locationProvider) {
   }).when('/portfolio', {
     templateUrl: 'views/partials/portfolio.html'
   });
-  $locationProvider.html5Mode(true);
+  $locationProvider.html5Mode({
+    enabled: true,
+    requireBase: false
+  });
 });
 
 
